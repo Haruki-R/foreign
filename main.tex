@@ -1,0 +1,38 @@
+\documentclass[UTF8, a4paper, zihao=-4]{ctexart}
+
+\usepackage{iftex}
+\ifPDFTeX\else
+  \usepackage{fontspec}
+\fi
+\usepackage{geometry}
+\geometry{left=3.175cm, right=3.175cm, top=2.54cm, bottom=2.54cm, headheight=21pt, headsep=8pt}
+\usepackage{setspace}
+\setstretch{1.5}
+\setlength{\parindent}{2em}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{times}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+\sloppy
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=0.6cm]{dhu-logo.png}}
+\fancyhead[R]{\zihao{-5} 基于CSP的PALE算法的形式化建模与验证}
+\fancyfoot[C]{\zihao{-5}\rmfamily\thepage}
+\renewcommand{\headrulewidth}{0.75pt}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{\includegraphics[height=0.6cm]{dhu-logo.png}}
+    \fancyhead[R]{\zihao{-5} 基于CSP的PALE算法的形式化建模与验证}
+    \fancyfoot[C]{\zihao{-5}\rmfamily\thepage}
+    \renewcommand{\headrulewidth}{0.75pt}
+}
+
+\begin{document}
+\pagestyle{fancy}
+\input{foreign_translation}
+\end{document}
